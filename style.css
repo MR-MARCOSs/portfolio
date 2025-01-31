@@ -1,27 +1,86 @@
-    /* Estilo do fundo e da animação */
-    body, html {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #0d0d0d;
-      color: #00ff00;
-      font-family: monospace;
-    }
-    
-    .code-drop {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      opacity: 1;
-    }
-    
-    .code-letter {
-      opacity: 1;
-      animation: fadeOut 4s linear forwards;
-    }
-    
-    @keyframes fadeOut {
-      0% { opacity: 1; }
-      100% { opacity: 0; }
-    }
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0d0d0d;
+  font-family: monospace;
+}
+
+.code-drop {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+  z-index: 0; 
+}
+
+.code-letter {
+  opacity: 1;
+  animation: fadeOut 4s linear forwards;
+  color: #00ff00; /* Cor da chuva de código */
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Estilos gerais */
+.greetings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* Espaço entre a imagem e o texto */
+  padding: 30px;
+  background-color: transparent;
+  position: relative; /* Necessário para z-index funcionar corretamente */
+  z-index: 1; /* Garante que o conteúdo dentro de greetings fique acima da chuva de código */
+}
+
+.profile-photo {
+  width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 200px;
+  border-radius: 50%; /* Para manter a imagem redonda */
+  background-color: transparent;
+}
+
+h1 {
+  margin: 0;
+  font-size: 55px;
+  line-height: 0.6;
+  margin-right: 10%;
+  background-color: transparent;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px; /* Espaço entre os ícones e o botão */
+  background-color: transparent;
+}
+
+.icons {
+  display: flex;
+  gap: 10px; /* Espaço entre os ícones */
+  background-color: transparent;
+}
+
+.icons img {
+  width: 55px; /* Tamanho dos ícones */
+  height: 55px;
+}
+
+.download-cv {
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.download-cv:hover {
+  background-color: #005bb5;
+}
