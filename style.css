@@ -51,6 +51,23 @@ h1 {
   line-height: 0.6;
   margin-right: 10%;
   background-color: transparent;
+  
+}
+
+.hi {
+  color: #ffffff; /* Exemplo de cor para "Hi, i'm" */
+}
+
+.name {
+  background: linear-gradient(90deg, #C70000, #FF9D00); /* Degradê para "Marcos Eduardo" */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.role {
+  background: linear-gradient(90deg, #00A571, #0913D8); /* Degradê para "FullStack Developer" */
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .links {
