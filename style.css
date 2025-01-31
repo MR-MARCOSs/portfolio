@@ -47,7 +47,7 @@ body, html {
 
 h1 {
   margin: 0;
-  font-size: 55px;
+  font-size: 60px;
   line-height: 0.6;
   margin-right: 10%;
   background-color: transparent;
@@ -91,13 +91,59 @@ h1 {
 
 .download-cv {
   padding: 10px 20px;
-  background-color: #0073e6;
-  color: white;
-  border: none;
+  background-color: transparent; /* Fundo transparente inicial */
+  color: white; /* Cor do texto inicial */
+  border: 2px solid transparent; /* Borda inicialmente transparente */
   border-radius: 20px;
   cursor: pointer;
+  font-weight: bold; /* Texto em negrito */
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease; /* Transição suave para o hover */
 }
 
+/* Gradiente no texto */
+.download-cv span {
+  background: linear-gradient(45deg, #C70000, #FF9D00); /* Gradiente no texto */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Texto transparente para mostrar o gradiente */
+  transition: all 0.3s ease; /* Transição suave para o hover */
+}
+
+/* Borda com gradiente */
+.download-cv::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background: linear-gradient(45deg, #C70000, #FF9D00) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  z-index: -1;
+  transition: all 0.3s ease; /* Transição suave para o hover */
+}
+
+/* Efeito hover */
 .download-cv:hover {
-  background-color: #005bb5;
+  background: linear-gradient(45deg, #C70000, #FF9D00);
+  border-color: transparent;
+  background-clip: padding-box; /* Impede que o fundo ultrapasse as bordas arredondadas */
+}
+
+.download-cv:hover span {
+  color: #0d0d0d; /* Cor do texto no hover (sem gradiente) */
+  background: transparent; /* Remove o gradiente do texto no hover */
+  -webkit-background-clip: initial;
+  background-clip: initial;
+}
+
+.download-cv:hover::before {
+  opacity: 0; /* Esconde a borda gradiente no hover */
 }
