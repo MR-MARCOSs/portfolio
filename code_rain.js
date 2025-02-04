@@ -1,7 +1,8 @@
   // Lista de palavras relacionadas a programação
   const words = [
-    "JavaScript", "HTML", "CSS", "Python", "Ruby", "Java",
-    "C++", "React", "Node", "SQL", "Kotlin", "API", "JSON", "XML", "Framework"
+    "JavaScript", "HTML", "CSS", "Python", "Langchain", "Java",
+    "Flutter", "TypeScript", "NodeJS", "SQL", "Github", "API", "JSON", "Flask", "Framework",
+    "Foco", "Fé", "Determinação", "Paciência"
   ];
 
   // Símbolos aleatórios para o efeito de substituição
@@ -18,8 +19,8 @@
     dropElement.classList.add("code-drop");
     
     // Define uma posição aleatória
-    dropElement.style.left = `${Math.random() * 100}vw`;
-    dropElement.style.top = `${Math.random() * 100}vh`;
+    dropElement.style.left = `${Math.random() * 135}vw`;
+    dropElement.style.top = `${Math.random() * 135}vh`;
     
     // Adiciona cada letra com atraso para criar o efeito de escrita vertical
     word.forEach((char, index) => {
@@ -55,4 +56,4 @@
   }
 
   // Gera as "chuvas de código" em intervalos regulares
-  setInterval(createDrop, 100);
+  setInterval(createDrop, 80);
