@@ -87,6 +87,15 @@ h1 {
 .icons img {
   width: 55px; /* Tamanho dos ícones */
   height: 55px;
+  transition: all 0.3s ease;
+}
+
+#github:hover {
+  content: url('./assets/github_hover.svg');
+}
+
+#linkedin:hover {
+  content: url('./assets/linkedin_hover.svg');
 }
 
 .download-cv {
@@ -146,4 +155,58 @@ h1 {
 
 .download-cv:hover::before {
   opacity: 0; /* Esconde a borda gradiente no hover */
+}
+
+/* Estilo da seção de tecnologias */
+.technologies {
+  background-color: #2D2D2D; /* Cinza claro */
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.technologies h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/* Container das tecnologias */
+.tech-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Cada item da lista de tecnologias */
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+}
+
+/* Ícones das tecnologias */
+.tech-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 2px;
+}
+
+/* Estilo do texto abaixo dos ícones */
+.tech-item p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  .tech-list {
+    flex-direction: column;
+    align-items: center;
+  }
 }
