@@ -19,7 +19,7 @@
     dropElement.classList.add("code-drop");
     
     // Define uma posição aleatória
-    dropElement.style.left = `${Math.random() * 135}vw`;
+    dropElement.style.left = `${Math.random() * 99}%`;
     dropElement.style.top = `${Math.random() * 135}vh`;
     
     // Adiciona cada letra com atraso para criar o efeito de escrita vertical
