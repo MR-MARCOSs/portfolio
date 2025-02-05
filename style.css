@@ -365,26 +365,56 @@ h1 {
     margin-top: 10px;
   }
 
-  /* Ajustes específicos para a seção de tecnologias */
-  .tech-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-    gap: 7px; /* Espaçamento entre os itens */
-    justify-content: center;
-    padding: 0 10px; /* Adiciona um pequeno padding nas laterais */
+  /* Ajustes específicos para a seção de tecnologias 
+
+  .technologies {
+    background-color: #2D2D2D;  Cinza claro 
+    padding: 1px 10px 5px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+  }
+  */
+  .technologies h2 {
+    margin-bottom: 15px;
+    
+  }
+  .tech-item {
+    flex: 1 1 calc(33.33% - 20px); /* 3 itens por linha com espaçamento */
+    max-width: calc(33.33% - 20px); /* Limita o tamanho máximo */
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .tech-item {
-    width: 100%; /* Ocupa 100% da largura da coluna */
-    max-width: 100%; /* Garante que não ultrapasse a largura da coluna */
+  /* Centraliza os dois itens na última linha */
+  .tech-list::after {
+    content: '';
+    flex: auto;
+  }
+
+  /* Ajuste para centralizar os dois itens na última linha */
+  .tech-item:nth-last-child(2):nth-child(3n + 1),
+  .tech-item:nth-last-child(2):nth-child(3n + 1) ~ .tech-item {
+    flex: 1 1 calc(50% - 10px); /* Faz os dois itens ocuparem metade da linha */
+    max-width: calc(50% - 10px); /* Limita o tamanho máximo */
   }
 
   .tech-icon {
-    width: 35px;
-    height: 35px;
+    margin-bottom: -15px;
+    margin-top: 15px;
+    width: 40px;
+    height: 40px;
   }
 
   .tech-item p {
     font-size: 14px;
+  }
+
+  .project-card {
+    width: 80%; /* 2 cartões por linha em telas médias */
   }
 }
