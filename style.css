@@ -274,7 +274,7 @@ h1 {
 
 .project-image {
   width: 100%;
-  height: 200px; /* Altura fixa para a imagem */
+  height: 150px; /* Altura fixa para a imagem */
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
@@ -324,7 +324,7 @@ h1 {
 /* Layout responsivo - 4 cartões por linha */
 .project-card {
   width: 23%; /* Quase 25% para caber 4 por linha */
-  margin: 10px;
+  margin: 5px;
 }
 
 /* Responsividade para telas menores */
@@ -334,17 +334,57 @@ h1 {
   }
 }
 
-@media (max-width: 768px) {
-  .project-card {
-    width: 90%; /* 1 cartão por linha em telas pequenas */
-  }
-}
-
-
 /* Responsividade para telas menores */
 @media (max-width: 600px) {
-  .tech-list {
+  .greetings {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin-right: 0%;
+  }
+
+  .profile-photo {
+    margin-right: 0;
+    margin-bottom: 1px;
+  }
+
+  .links {
+    flex-direction: column;
+    margin-top: 1px;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  .download-cv {
+    margin-top: 10px;
+  }
+
+  /* Ajustes específicos para a seção de tecnologias */
+  .tech-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 7px; /* Espaçamento entre os itens */
+    justify-content: center;
+    padding: 0 10px; /* Adiciona um pequeno padding nas laterais */
+  }
+
+  .tech-item {
+    width: 100%; /* Ocupa 100% da largura da coluna */
+    max-width: 100%; /* Garante que não ultrapasse a largura da coluna */
+  }
+
+  .tech-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .tech-item p {
+    font-size: 14px;
   }
 }
