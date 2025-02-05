@@ -332,7 +332,7 @@ h1 {
   .greetings {
     flex-direction: column;
     text-align: center;
-    gap: 30px;
+    gap: 15px;
   }
 
   h1 {
