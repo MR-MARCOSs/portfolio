@@ -324,14 +324,7 @@ h1 {
 /* Layout responsivo - 4 cartões por linha */
 .project-card {
   width: 23%; /* Quase 25% para caber 4 por linha */
-  margin: 5px;
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 1024px) {
-  .project-card {
-    width: 45%; /* 2 cartões por linha em telas médias */
-  }
+  margin: 3px;
 }
 
 /* Responsividade para telas menores */
@@ -418,3 +411,9 @@ h1 {
     width: 80%; /* 2 cartões por linha em telas médias */
   }
 }
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+    margin-right: 0%;
+  }}
