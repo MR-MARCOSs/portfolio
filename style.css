@@ -52,7 +52,10 @@ h1 {
   line-height: 0.6;
   margin-right: 10%;
   background-color: transparent;
-  
+}
+
+.br {
+  font-size: 50px;
 }
 
 .hi {
@@ -449,4 +452,8 @@ h1 {
   h1 {
     font-size: 20px;
     margin-right: 0%;
-  }}
+  }
+  .br {
+    font-size: 17px;
+  }
+}
