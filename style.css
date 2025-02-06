@@ -47,11 +47,9 @@ body, html {
 }
 
 h1 {
-  margin: 0;
   font-size: 60px;
   line-height: 0.6;
-  margin-right: 10%;
-  background-color: transparent;
+  margin-right: 9%;
 }
 
 .br {
@@ -80,7 +78,7 @@ h1 {
   align-items: center; /* Alinha verticalmente no centro */
   justify-content: center;
   gap: 10px; /* Espaço entre os ícones e o botão */
-  background-color: transparent;
+  color: #ffffff;
 }
 
 .icons {
@@ -391,16 +389,19 @@ h1 {
   
 }
 
-.project-content button {
-  background-color: #3498db;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 15px;
-  font-size: 14px;
+.certificate-link {
+  background-color: #3498db;;      /* Cor de fundo azul */
+  color: white;                /* Texto branco */
+  padding: 10px 20px;          /* Espaçamento interno para deixar o retângulo */
+  text-decoration: none;       /* Remover o underline */
+  border-radius: 17px;         /* Bordas arredondadas */
+  display: inline-block;       /* Certificar que o link seja tratado como um bloco inline */
 }
-.project-content button:hover {
-background-color: #2980b9;
+
+.certificate-link:hover {
+  background-color: #2980b9;  /* Cor de fundo mais escura ao passar o mouse */
 }
+
 
 /* Responsividade para telas menores */
 @media (max-width: 600px) {
