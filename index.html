@@ -132,11 +132,51 @@
       </div>
     </div>
   </div>
+
+  <div class="projects">
+    <div class="titulo-com-seta" onclick="toggleProjects()">
+      <h2 id="titulo">Clique para expandir</h2>
+      <span id="seta" class="seta">▶</span>
+    </div>
+    <div class="project-cards" id="project-cards">
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Intro to Machine Learning</h3>
+          <h4>De: Kaggle</h4>
+          <img src="./assets/project4.png" alt="Projeto 4" class="project-image">
+          <button class="certificate-img">Ver certificado</button>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Intro to Machine Learning</h3>
+          <h4>De: Kaggle</h4>
+          <img src="./assets/project4.png" alt="Projeto 4" class="project-image">
+          <button class="certificate-img">Ver certificado</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <div class="language-switcher">
     <a href="./en.html" class="flag-icon usa" title="English"></a>
     <a href="#" class="flag-icon brazil" title="Português"></a>
   </div>
 
   <script src="./code_rain.js"></script>
+  <script>function toggleProjects() {
+    const projectCards = document.getElementById('project-cards');
+    const seta = document.getElementById('seta');
+  
+    if (projectCards.style.display === 'none' || projectCards.style.display === '') {
+      projectCards.style.display = 'flex';
+      seta.textContent = '▼';
+    } else {
+      projectCards.style.display = 'none';
+      seta.textContent = '▶';
+    }
+  }
+  </script>
 </body>
 </html>
