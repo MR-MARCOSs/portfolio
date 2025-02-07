@@ -20,7 +20,7 @@
     
     // Define uma posição aleatória
     dropElement.style.left = `${Math.random() * 99}%`;
-    dropElement.style.top = `${Math.random() * 135}vh`;
+    dropElement.style.top = `${Math.random() * 200}vh`;
     
     // Adiciona cada letra com atraso para criar o efeito de escrita vertical
     word.forEach((char, index) => {
@@ -56,6 +56,6 @@
   }
 
   // Gera as "chuvas de código" em intervalos regulares
-  setInterval(createDrop, 80);
+  setInterval(createDrop, 75);
 
   
