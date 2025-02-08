@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="greetings">
-    <img src="./assets/Ellipse 1.png" alt="Photo of Marcos Eduardo" class="profile-photo">
+    <img src="./assets/PROFILE2.png" class="profile-photo">
     <h1><span class="hi">Hi, I'm</span> <span class="name">Marcos Eduardo</span><p></p> <span class="role">FullStack Developer</span></h1>
 
     <div class="links">
@@ -133,11 +133,86 @@
       <!-- Add more project cards as needed -->
     </div>
   </div>
+
+    <div class="projects">
+    <div class="titulo-com-seta" onclick="toggleProjects()">
+      <h2 id="titulo">Extracurricular Certificates</h2>
+      <span id="seta" class="seta">▶</span>
+    </div>
+    <div class="project-cards" id="project-cards">
+
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Intro to Machine Learning</h3>
+          <h4>De: Kaggle</h4>
+          <img src="./assets/intro-to-ml.png" alt="Projeto 4" class="project-image">
+          <a href="./assets/intro-to-ml.png" target="_blank" class="certificate-link">See certificate</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Intermediate Machine Learning</h3>
+          <h4>De: Kaggle</h4>
+          <img src="./assets/intermediate-ml.png" alt="Projeto 4" class="project-image">
+          <a href="./assets/intermediate-ml.png" target="_blank" class="certificate-link">See certificate</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-content">
+          <h3>NodeJS</h3>
+          <h4>De: RocketSeat</h4>
+          <img src="./assets/nodejsimg.png" alt="Projeto 4" class="project-image">
+          <a href="./assets/Nodejs.pdf" target="_blank" class="certificate-link">See certificate</a>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Discover(HTML, CSS)</h3>
+          <h4>De: RocketSeat</h4>
+          <img src="./assets/discover.png" alt="Projeto 4" class="project-image">
+          <a href="./assets/Discover.pdf" target="_blank" class="certificate-link">See certificate</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-content">
+          <h3>AI for Devs</h3>
+          <h4>De: RocketSeat</h4>
+          <img src="./assets/AI.png" alt="Projeto 4" class="project-image">
+          <a href="./assets/AIForDevs.pdf" target="_blank" class="certificate-link">See certificate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="about-me">
+<h2>About Me</h2>
+With a great passion for and exposure to technology since I was young, I had already decided which field I wanted to pursue. I am currently in the 7th semester of a Software Engineering course at the University Católica of Tocantins.<p></p>
+I have developed projects as a freelancer and have worked as an administrative assistant and salesperson at my father's store, always aiming for better results and contributing to the company's growth.<p></p>
+My main hobbies include playing computer games, watching anime and TV series, reading science fiction books, going to the gym, practicing sports, and having good conversations with friends and family.
+  </div>
+
   <div class="language-switcher">
     <a href="#" class="flag-icon usa" title="English"></a>
     <a href="./index.html" class="flag-icon brazil" title="Português"></a>
   </div>
 
   <script src="./code_rain.js"></script>
+    <script>function toggleProjects() {
+    const projectCards = document.getElementById('project-cards');
+    const seta = document.getElementById('seta');
+  
+    if (projectCards.style.display === 'none' || projectCards.style.display === '') {
+      projectCards.style.display = 'flex';
+      seta.textContent = '▼';
+    } else {
+      projectCards.style.display = 'none';
+      seta.textContent = '▶';
+    }
+  }
+  </script>
 </body>
 </html>
