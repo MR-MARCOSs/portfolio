@@ -40,10 +40,13 @@ body, html {
 }
 
 .profile-photo {
-  width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
-  height: 200px;
-  border-radius: 50%; /* Para manter a imagem redonda */
-  background-color: transparent;
+  width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: linear-gradient(45deg, #C70000, #FF9D00);/* Para manter a imagem redonda */
+      background-image: url('./assets/PROFILE2.png'); /* Substitua pelo caminho da sua imagem */
+      background-size: cover; /* Ajusta a imagem para cobrir toda a área do círculo */
+      background-position: center;
 }
 
 h1 {
