@@ -2,7 +2,7 @@
 const words = [
   "JavaScript", "HTML", "CSS", "Python", "Langchain", "Java",
   "Flutter", "TypeScript", "NodeJS", "SQL", "Github", "API", "JSON", "Flask", "Framework",
-  "Foco", "Fé", "Determinação", "Paciência"
+  "Foco", "Fé", "Determinação", "Paciência", "Docker", "Kubernetes", "Pipelines"
 ];
 
 // Símbolos aleatórios para o efeito de substituição
