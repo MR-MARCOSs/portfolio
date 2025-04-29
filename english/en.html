@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcos | Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="greetings">
+    <img src="../assets/PROFILE2.png" class="profile-photo">
+    <h1 class="en"><span class="hi">Hello, I'm</span> <span class="name">Marcos Eduardo</span><p></p> <span class="role">Software Engineer</span></h1>
+
+    <div class="links">
+      <div class="icons">
+        <a href="https://github.com/MR-MARCOSs" target="_blank"><img src="../assets/github.png" alt="Github Icon" id="github"></a>
+        <a href="https://www.linkedin.com/in/marcos-eduardo-evangelista-silva-96293b166/" target="_blank"><img src="../assets/linkedin.png" alt="Linkedin Icon" id="linkedin"></a>
+        <a href="https://wa.me/+5563992482813" target="_blank"><img src="../assets/whats.png" alt="WhatsApp Icon" id="whats"></a>
+      </div>
+      <button class="download-cv">
+        <a href="../assets/MarcosCV.pdf" download target="_blank">
+          <span>Download CV</span>
+        </a>
+      </button>
+      marcosdudu001@gmail.com
+    </div>
+  </div>
+  
+  <div class="technologies">
+    <h2>Technologies:</h2>
+    <div class="tech-list" id="tech-list">
+      <!-- The list will be dynamically filled by JavaScript -->
+    </div>
+  </div>
+  
+  <div class="projects">
+    <h2 class="projects-title">Projects:</h2>
+    <div class="projects-container" id="projects-container">
+      <!-- The projects list will be dynamically filled by JavaScript -->
+    </div>
+  </div>
+
+    <div class="projects">
+    <div class="titulo-com-seta" onclick="toggleProjects()">
+      <h2 id="titulo">Extracurricular Certificates</h2>
+      <span id="seta" class="seta">▶</span>
+    </div>
+    <div class="project-cards" id="project-cards">
+      <!-- The certificate cards will be dynamically filled by JavaScript -->
+    </div>
+  </div>
+
+  <div class="about-me">
+    <h2>About Me</h2>
+    With great passion and contact with technology since childhood, I had already decided which field to pursue. I'm currently in the 7th semester of Software Engineering at Catholic University of Tocantins.<p></p>
+    I've developed projects as a freelancer and have worked as an administrative assistant and salesperson at my father's store, always aiming for better results and adding value to the company.<p></p>
+    My main hobbies are computer games, watching anime and series, reading science fiction books, going to the gym, practicing sports, and having good conversations with friends and family.
+  </div>
+
+
+  <div class="language-switcher">
+    <a href="#" class="flag-icon usa" title="English"></a>
+    <a href="../index.html" class="flag-icon brazil" title="Português"></a>
+  </div>
+
+  <script src="../code_rain.js"></script>
+  <script src="EnCertificates.js" defer></script>
+  <script src="technologies.js" defer></script>
+  <script src="EnProjects.js" defer></script>
+    <script>function toggleProjects() {
+    const projectCards = document.getElementById('project-cards');
+    const seta = document.getElementById('seta');
+  
+    if (projectCards.style.display === 'none' || projectCards.style.display === '') {
+      projectCards.style.display = 'flex';
+      seta.textContent = '▼';
+    } else {
+      projectCards.style.display = 'none';
+      seta.textContent = '▶';
+    }
+  }
+  </script>
+</body>
+</html>
