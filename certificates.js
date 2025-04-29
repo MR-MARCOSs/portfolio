@@ -34,6 +34,13 @@ const certificates = [
       image: "./assets/AI.png",
       link: "./assets/AIForDevs.pdf",
       alt: "Projeto 5"
+    },
+    {
+      title: "Desafio DevOps e Cloud",
+      issuer: "Fabricio Veronez",
+      image: "./assets/DevOps Badges.png",
+      link: "https://api.badgr.io/public/collections/75d41e9266b44192a0d25aa55b3a47fc",
+      alt: "Projeto 6"
     }
   ];
 
