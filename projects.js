@@ -27,22 +27,13 @@ const projects = [
       githubLink: "https://github.com/MR-MARCOSs/cryptoWeb",
       githubIcon: "./assets/github.png"
     },
-    {
-      title: "Automação de mensagens",
-      image: "./assets/project4.png",
-      alt: "Projeto 4",
-      description: "Executável Python para envio de mensagens no WhatsApp Web.",
-      tags: ["Python", "WebScrap", "RPA"],
-      githubLink: "https://github.com/MR-MARCOSs/Process-Automation",
-      githubIcon: "./assets/github.png"
-    }
+    
   ];
 
-      // Espera até o conteúdo da página carregar completamente
       window.addEventListener('DOMContentLoaded', () => {
         const projectsContainer = document.getElementById('projects-container');
   
-        // Itera sobre o array de projetos e cria os elementos HTML dinamicamente
+
         projects.forEach(project => {
           const projectCard = document.createElement('div');
           projectCard.classList.add('project-card');
@@ -71,13 +62,13 @@ const projects = [
             tagsContainer.appendChild(tagElement);
           });
   
-          // Adiciona os elementos ao conteúdo do projeto
+  
           projectContent.appendChild(projectTitle);
           projectContent.appendChild(projectImage);
           projectContent.appendChild(projectDescription);
           projectContent.appendChild(tagsContainer);
   
-          // Adiciona o link para o GitHub ou Hugging Face
+  
           const projectLink = document.createElement('a');
           projectLink.href = project.githubLink;
           projectLink.target = "_blank";
@@ -89,11 +80,11 @@ const projects = [
   
           projectLink.appendChild(githubIcon);
   
-          // Adiciona o link de GitHub/Hugging Face ao card do projeto
+  
           projectCard.appendChild(projectContent);
           projectCard.appendChild(projectLink);
   
-          // Adiciona o card à lista de projetos
+  
           projectsContainer.appendChild(projectCard);
         });
       });
