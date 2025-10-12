@@ -10,12 +10,9 @@ const technologies = [
     { name: "Docker", icon: "./assets/docker-icon.png", alt: "Docker" }
   ];
   
-
-  // Espera até o conteúdo da página carregar completamente
   window.addEventListener('DOMContentLoaded', () => {
     const techListElement = document.getElementById('tech-list');
 
-    // Itera sobre a lista de tecnologias e cria os elementos HTML dinamicamente
     technologies.forEach(tech => {
       const techItem = document.createElement('div');
       techItem.classList.add('tech-item');
@@ -28,11 +25,9 @@ const technologies = [
       const techName = document.createElement('p');
       techName.textContent = tech.name;
 
-      // Adiciona a imagem e o nome da tecnologia ao item
       techItem.appendChild(techIcon);
       techItem.appendChild(techName);
 
-      // Adiciona o item à lista de tecnologias
       techListElement.appendChild(techItem);
     });
   });

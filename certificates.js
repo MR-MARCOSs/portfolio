@@ -1,4 +1,3 @@
-// certificates.js
 const certificates = [
     {
       title: "Intro to Machine Learning",
@@ -44,14 +43,9 @@ const certificates = [
     }
   ];
 
-  // Função para alternar a exibição dos projetos ao clicar no título
-
-
-  // Espera até o conteúdo da página carregar completamente
   window.addEventListener('DOMContentLoaded', () => {
     const projectCardsContainer = document.getElementById('project-cards');
 
-    // Itera sobre a lista de certificados e cria os elementos HTML dinamicamente
     certificates.forEach(cert => {
       const projectCard = document.createElement('div');
       projectCard.classList.add('project-card');
@@ -76,13 +70,11 @@ const certificates = [
       certificateLink.classList.add('certificate-link');
       certificateLink.textContent = "Ver certificado";
 
-      // Adiciona os elementos ao conteúdo do projeto
       projectContent.appendChild(projectTitle);
       projectContent.appendChild(projectIssuer);
       projectContent.appendChild(projectImage);
       projectContent.appendChild(certificateLink);
 
-      // Adiciona o card à lista de certificados
       projectCard.appendChild(projectContent);
       projectCardsContainer.appendChild(projectCard);
     });

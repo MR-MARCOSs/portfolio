@@ -1,4 +1,3 @@
-// projects.js
 const projects = [
     {
       title: "Site chat com IA's",
@@ -32,7 +31,6 @@ const projects = [
 
       window.addEventListener('DOMContentLoaded', () => {
         const projectsContainer = document.getElementById('projects-container');
-  
 
         projects.forEach(project => {
           const projectCard = document.createElement('div');
@@ -61,14 +59,12 @@ const projects = [
             tagElement.textContent = tag;
             tagsContainer.appendChild(tagElement);
           });
-  
-  
+
           projectContent.appendChild(projectTitle);
           projectContent.appendChild(projectImage);
           projectContent.appendChild(projectDescription);
           projectContent.appendChild(tagsContainer);
-  
-  
+
           const projectLink = document.createElement('a');
           projectLink.href = project.githubLink;
           projectLink.target = "_blank";
@@ -79,11 +75,9 @@ const projects = [
           githubIcon.alt = "GitHub";
   
           projectLink.appendChild(githubIcon);
-  
-  
+
           projectCard.appendChild(projectContent);
           projectCard.appendChild(projectLink);
-  
   
           projectsContainer.appendChild(projectCard);
         });

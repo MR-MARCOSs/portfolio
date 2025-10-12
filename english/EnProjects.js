@@ -1,4 +1,3 @@
-// projects.js
 const projects = [
   {
     title: "AI Chat Website",

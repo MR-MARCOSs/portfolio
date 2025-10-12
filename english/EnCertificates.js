@@ -1,4 +1,3 @@
-// certificates.js
 const certificates = [
   {
     title: "Intro to Machine Learning",
@@ -47,7 +46,6 @@ const certificates = [
 window.addEventListener('DOMContentLoaded', () => {
   const projectCardsContainer = document.getElementById('project-cards');
 
-  // Iterates over the certificates list and creates HTML elements dynamically
   certificates.forEach(cert => {
     const projectCard = document.createElement('div');
     projectCard.classList.add('project-card');
@@ -72,13 +70,11 @@ window.addEventListener('DOMContentLoaded', () => {
     certificateLink.classList.add('certificate-link');
     certificateLink.textContent = "View certificate";
 
-    // Adds elements to the project content
     projectContent.appendChild(projectTitle);
     projectContent.appendChild(projectIssuer);
     projectContent.appendChild(projectImage);
     projectContent.appendChild(certificateLink);
 
-    // Adds the card to the certificates list
     projectCard.appendChild(projectContent);
     projectCardsContainer.appendChild(projectCard);
   });
